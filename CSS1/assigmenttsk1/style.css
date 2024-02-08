@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grid-container {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+  }
+  
+  .block1 {
+    background: url(photo1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+  
+  .block2 {
+    background: url(photo2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5 / span 2;
+    grid-row: 1;
+  }
+  
+  .block3 {
+    grid-column: 7;
+    grid-row: 1 / span 4;
+    text-align: end;
+    color: #fff;
+  }
+  
+  p:hover {
+    color: brown;
+    cursor: pointer;
+  }
+  
+  .block4 {
+    background: url(photo3.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .block5 {
+    background: url(photo4.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2 / span 4;
+    grid-row: 2;
+  }
+  
+  .block6 {
+    background: url(photo5.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 6;
+    grid-row: 2;
+  }
+  
+  .block7 {
+    background: url(photo6.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  
+  .block8 {
+    background: url(photo7.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 4 / span 3;
+    grid-row: 3;
+  }
+  
+  .block9 {
+    background: url(photo8.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+  
+  .block10 {
+    background: url(photo9.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3 / span 2;
+    grid-row: 4;
+  }
+  
+  .block11 {
+    background: url(photo10.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 5 / span 2;
+    grid-row: 4;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .grid-container {
+      height: 100vh;
+      width: auto;
+      display: grid;
+      gap: 10px;
+      padding: 10px;
+      background-color: black;
+    }
+  
+    .block1 {
+      background: url(photo5.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1 / span 3;
+      grid-row: 1;
+    }
+  
+    .block2 {
+      background: url(photo2.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 4;
+      grid-row: 1;
+    }
+  
+    .block3 {
+      grid-column: 5;
+      grid-row: 1 / span 5;
+      text-align: end;
+      color: #fff;
+    }
+  
+    p:hover {
+      color: brown;
+      cursor: pointer;
+    }
+  
+    .block4 {
+      background: url(photo3.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+    .block5 {
+      background: url(photo4.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2 / span 3;
+      grid-row: 2;
+    }
+  
+    .block6 {
+      background: url(photo5.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1 / span 2;
+      grid-row: 3;
+    }
+  
+    .block7 {
+      background: url(photo6.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 3 / span 2;
+      grid-row: 3;
+    }
+  
+    .block8 {
+      background: url(photo7.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1 / span 3;
+      grid-row: 4;
+    }
+  
+    .block9 {
+      background: url(photo8.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 4;
+      grid-row: 4;
+    }
+  
+    .block10 {
+      background: url(photo9.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 5;
+    }
+  
+    .block11 {
+      background: url(photo10.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2 / span 3;
+      grid-row: 5;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .grid-container {
+      height: 100vh;
+      width: auto;
+      display: grid;
+      gap: 10px;
+      padding: 10px;
+      background-color: black;
+    }
+  
+    .block1 {
+      background: url(photo5.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    .block2 {
+      background: url(photo2.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2;
+      grid-row: 1;
+    }
+  
+    .block3 {
+      grid-column: 3;
+      grid-row: 1 / span 5;
+      text-align: end;
+      color: #fff;
+    }
+  
+    p:hover {
+      color: brown;
+      cursor: pointer;
+    }
+  
+    .block4 {
+      background: url(photo3.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+    .block5 {
+      background: url(photo4.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2;
+      grid-row: 2;
+    }
+  
+    .block6 {
+      background: url(photo5.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 3;
+    }
+  
+    .block7 {
+      background: url(photo6.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2;
+      grid-row: 3;
+    }
+  
+    .block8 {
+      background: url(photo7.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 4;
+    }
+  
+    .block9 {
+      background: url(photo8.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2;
+      grid-row: 4;
+    }
+  
+    .block10 {
+      background: url(photo9.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 1;
+      grid-row: 5;
+    }
+  
+    .block11 {
+      background: url(photo10.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: 2;
+      grid-row: 5;
+    }
+  }

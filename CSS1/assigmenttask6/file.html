@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: o;
+        padding: 0;
+    }
+
+    .team {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 60px 150px;
+        position: relative;
+    }
+
+    .link {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 10px;
+        margin-top: -12px;
+        gap: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how i {
+        margin-left: 4px;
+    }
+
+    .product i {
+        margin-left: 4px;
+    }
+
+    .resuorce i {
+        margin-left: 4px;
+    }
+
+    .login {
+        margin-left: 1050px;
+        margin-top: -20px;
+    }
+
+    .box {
+        background-color: #edebeb;
+        height: 50px;
+        width: 170px;
+        border-radius: 2.5px;
+        margin-left: 1120px;
+        margin-top: -36px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: blueviolet;
+        /* padding: 20px; */
+    }
+
+    .save {
+        height: 30px;
+        width: 100px;
+        background-color: rgb(84, 208, 84);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: blueviolet;
+        font-size: small;
+        color: white;
+        margin-left: 470px;
+        margin-top: 70px;
+        z-index: 999;
+
+    }
+
+    .get {
+        height: 30px;
+        width: 200px;
+        background-color: rgb(238, 244, 238);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+        margin-left: 550px;
+        margin-top: -30px;
+        position: absolute;
+        /* left: -10px; */
+        z-index: -1;
+    }
+
+    .manage {
+        font-size: 60px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .simple {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .mail {
+        border: 2px solid rgb(214, 212, 212);
+        height: 50px;
+        width: 300px;
+        margin-left: 360px;
+        margin-top: 30px;
+        color: rgb(162, 159, 159);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .try {
+        background-color: blueviolet;
+        height: 54px;
+        width: 200px;
+        margin-left: 654px;
+        margin-top: -54px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back {
+        height: 800px;
+        width: 990px;
+        background-color: rgb(249, 248, 248);
+        box-shadow: 0 0 3em rgb(228, 226, 226);
+        margin-top: 20px;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        margin-left: 110px;
+    }
+
+    .black {
+        height: 800px;
+        width: 90px;
+        background-color: black;
+        display: flex;
+        align-items: start;
+        justify-content: left;
+    }
+
+    .black img {
+        height: 40px;
+        width: 40px;
+        margin: 30px 25px;
+
+    }
+
+    .line {
+        height: 1px;
+        width: 70px;
+        background-color: rgb(50, 49, 49);
+        margin-top: -695px;
+        margin-left: 10px;
+
+    }
+
+    .icon i {
+        display: flex;
+        /* padding: 10px;  */
+        /* margin-left: 7px; */
+        display: flex;
+        margin: 35px;
+    }
+
+    .quetion i {
+        margin-left: 35px;
+        margin-top: 390px;
+    }
+
+    .over {
+        color: black;
+        margin-left: 130px;
+        margin-top: -700px;
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .flex {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        gap: 10px;
+
+    }
+
+    .item1 {
+        background-color: rgb(227, 224, 224);
+        height: 150px;
+        width: 240px;
+        /* margin: 10px; */
+        margin-right: 40px;
+        margin-top: 30px;
+        text-align: center;
+        /* padding: 5px; */
+        font-size: xx-large;
+    }
+
+    .item2 {
+        background-color: rgb(227, 224, 224);
+        height: 150px;
+        width: 240px;
+        /* margin: 10px; */
+        margin-right: 40px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .item3 {
+        background-color: rgb(227, 224, 224);
+        height: 150px;
+        width: 240px;
+        /* margin: 10px; */
+        margin-right: 40px;
+        text-align: center;
+        margin-top: 30px;
+        padding: 6px;
+    }
+
+    .item1 i {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        margin-top: -29px;
+        margin-right: 10px;
+    }
+
+    .hour {
+        font-size: small;
+        color: rgb(68, 67, 67);
+        padding: 30px;
+        text-align: center;
+    }
+
+    .red {
+        background-color: rgb(225, 186, 186);
+        height: 30px;
+        width: 90px;
+        color: brown;
+        border-radius: 3px;
+        margin-top: 20px;
+        margin-left: 43px;
+        text-align: end;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-size: larger;
+    }
+
+    .green {
+
+        background-color: rgb(192, 225, 186);
+        height: 30px;
+        width: 90px;
+        color: rgb(45, 139, 45);
+        border-radius: 3px;
+        margin-top: 20px;
+        margin-left: 43px;
+        text-align: center;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size: larger;
+    }
+
+    .green1 {
+        background-color: rgb(192, 225, 186);
+        height: 30px;
+        width: 90px;
+        color: rgb(45, 139, 45);
+        border-radius: 3px;
+        margin-top: 20px;
+        margin-left: 43px;
+        text-align: center;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size: larger;
+    }
+
+    .launch {
+        height: 400px;
+        width: 240px;
+        background-color: rgb(227, 224, 224);
+        margin-top: 40px;
+        margin-left: 130px;
+    }
+
+    .work {
+        height: 400px;
+        width: 533px;
+        background-color: rgb(227, 224, 224);
+        margin-top: -400px;
+        margin-left: 419px
+    }
+
+    .text1 {
+        padding: 30px;
+    }
+
+    .one {
+        margin-left: 30px;
+        margin-top: 140px;
+        color: rgb(109, 108, 108)
+    }
+
+    .twelve {
+        height: 100px;
+        width: 20px;
+        background-color: white;
+        border-radius: 3px;
+        margin-left: 31px;
+        margin-top: 6px;
+    }
+
+    .jan {
+        margin-left: 27px;
+        margin-top: 10px;
+        color: rgb(109, 108, 108);
+    }
+
+    .two {
+        margin-left: 69px;
+        margin-top: -184px;
+        margin-bottom: 10px;
+        color: rgb(109, 108, 108)
+    }
+
+    .therty {
+        height: 135px;
+        width: 20px;
+        background-color: white;
+        border-radius: 3px;
+        margin-left: 69px;
+        margin-top: -9px;
+    }
+
+    .fab {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 65px;
+        margin-top: 13px;
+        color: rgb(109, 108, 108);
+    }
+
+    .three {
+        margin-left: 107px;
+        margin-top: -322px;
+        color: rgb(63, 162, 63);
+        color: rgb(109, 108, 108)
+    }
+
+    .fifti {
+        height: 272px;
+        width: 20px;
+        background-color: green;
+        border-radius: 3px;
+        margin-left: 108px;
+        margin-top: 2px;
+    }
+
+    .mar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 104px;
+        margin-top: 9px;
+        color: rgb(109, 108, 108);
+    }
+
+    .four {
+        margin-left: 148px;
+        margin-top: -174px;
+        color: rgb(109, 108, 108)
+    }
+
+    .twenty {
+        height: 125px;
+        width: 20px;
+        background-color: white;
+        border-radius: 3px;
+        margin-left: 148px;
+        margin-top: 2px;
+    }
+
+    .apr {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 145px;
+        margin-top: 9px;
+        color: rgb(109, 108, 108);
+    }
+
+    .five {
+        margin-left: 189px;
+        margin-top: -254px;
+        color: rgb(109, 108, 108)
+    }
+
+    .fourty {
+        height: 204px;
+        width: 20px;
+        background-color: white;
+        border-radius: 3px;
+        margin-left: 189px;
+        margin-top: 2px;
+    }
+
+    .may {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 183px;
+        margin-top: 10px;
+        color: rgb(109, 108, 108);
+    }
+
+    .work {
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .right {
+        margin-left: 223px;
+        margin-top: -18px;
+        color: rgb(109, 108, 108)
+    }
+
+    .left {
+        margin-left: 10px;
+        margin-top: -24px;
+        color: rgb(109, 108, 108)
+    }
+
+    .border {
+        border: 2px solid rgb(109, 108, 108);
+        height: 30px;
+        width: 75px;
+        /* background-color: red; */
+        margin-left: 874px;
+        margin-top: -398px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+        color: rgb(109, 108, 108);
+    }
+
+    .left1 {
+        margin-left: 433px;
+        margin-top: 312px;
+        color: rgb(109, 108, 108)
+    }
+
+    .right1 {
+        margin-left: 948px;
+        margin-top: -19px;
+        color: rgb(109, 108, 108)
+    }
+
+    .month {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        margin-left: 403px;
+        margin-top: -20px;
+        color: rgb(109, 108, 108);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 62px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 404px;
+        margin-top: -298px;
+    }
+
+    .line1 {
+        border: 2px dotted rgb(109, 108, 108);
+        width: 517px;
+        opacity: 0.250;
+    }
+
+    .blue {
+        height: 100px;
+        width: 20px;
+        background-color: blue;
+    }
+
+    .number {
+        display: flex;
+        flex-direction: column;
+        color: rgb(109, 108, 108);
+        gap: 40px;
+        margin-left: 436px;
+        margin-top: -291px
+    }
+
+    .chart {
+        display: flex;
+        margin-left: 462px;
+        margin-top: -9px;
+        gap: 9px;
+        /* flex-direction: column; */
+    }
+
+    .chart1 {
+        height: 140px;
+        width: 50px;
+        background-color: rgb(105, 105, 197);
+        border-radius: 4px;
+        margin-left: 30px;
+        flex-direction: column;
+        margin-top: -101px;
+    }
+
+    .chart2 {
+        height: 220px;
+        width: 50px;
+        background-color: rgb(172, 94, 94);
+        border-radius: 4px;
+        margin-top: -181px;
+        margin-left: 30px;
+    }
+
+    .chart3 {
+        height: 115px;
+        width: 50px;
+        background-color: rgb(171, 171, 100);
+        border-radius: 4px;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: -76px;
+    }
+
+    .chart4 {
+        height: 80px;
+        width: 50px;
+        background-color: rgb(183, 137, 51);
+        border-radius: 4px;
+        margin-left: 30px;
+        margin-top: -41px;
+    }
+
+    .chart5 {
+        height: 61px;
+        width: 50px;
+        background-color: rgb(83, 54, 54);
+        border-radius: 4px;
+        margin-left: 30px;
+        margin-top: -22px;
+    }
+
+    .trust {
+        text-align: center;
+        margin: 130px;
+    }
+
+    .google {
+        flex-direction: row;
+        display: flex;
+        margin-top: -98px;
+        margin-left: 62px;
+    }
+
+    .g {
+        color: #4285F4;
+        font-size: x-large;
+    }
+
+    .o {
+        color: #EA4335;
+        font-size: x-large;
+
+    }
+
+    .o1 {
+        color: #FBBC05;
+        font-size: x-large;
+
+    }
+
+    .g1 {
+        color: #4285F4;
+        font-size: x-large;
+
+    }
+
+    .l {
+        color: #34A853;
+        font-size: x-large;
+
+    }
+
+    .e {
+        color: #EA4335;
+        font-size: x-large;
+
+    }
+
+    .air {
+        color: #FF5A5F;
+        margin-left: 290px;
+        margin-top: -23px;
+        font-size: larger;
+    }
+
+    .facebook {
+        color: #4267B2;
+        font-size: larger;
+        margin-left: 530px;
+        margin-top: -23px;
+    }
+
+    .hub {
+        color: #26364d;
+        margin-left: 770px;
+        margin-top: -23px;
+        font-size: larger;
+    }
+
+    .slack {
+        font-size: larger;
+        margin-left: 1000px;
+        margin-top: -25px;
+
+
+    }
+
+    .timeline {
+        background-color: #FBFAFE;
+        height: 99vh;
+
+        width: 1394px;
+        /* margin: 50px; */
+        padding: 30px;
+        margin-left: -120px;
+        margin-top: 50px;
+
+
+    }
+
+    .message {
+        background-image: url(image/message.jpg);
+        height: 655px;
+        width: 820px;
+
+    }
+
+    .survey {
+        background-image: url(image/survey.jpg);
+        height: 620px;
+        width: 450px;
+        margin-top: -620px;
+        margin-left: 900px;
+    }
+
+    .make {
+        width: 436px;
+        height: 40px;
+        margin-left: 420px;
+        font-size: xx-large;
+        margin-top: 70px;
+    }
+
+    .six {
+        background-image: url(image/team.jpg);
+        height: 350px;
+        width: 700px;
+        margin-left: 250px;
+        background-size: cover;
+        margin-top: 50px;
+    }
+
+    .work1 {
+        font-size: x-large;
+        text-align: left;
+        padding-top: 200px;
+        padding-left: 250px;
+    }
+
+    .seven {
+        background-color: #FBFAFE;
+        height: 77vh;
+        width: 125.5%;
+        margin-left: -155px;
+
+    }
+
+    .since {
+        margin-left: 250px;
+        margin-top: 30px;
+    }
+
+    .start {
+        background-color: #796EFF;
+        height: 50px;
+        width: 180px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        margin-left: 249px;
+        color: white;
+    }
+
+    .graph1 {
+        background-image: url(image/graph.jpg);
+        height: 280px;
+        width: 400px;
+        background-size: cover;
+        margin-left: 785px;
+        margin-top: -242px;
+        display: flex;
+
+    }
+
+    .why {
+        font-size: x-large;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .it {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .person {
+        background-image: url(image/person.jpg);
+        height: 50px;
+        width: 590px;
+        margin-left: 320px;
+        margin-top: 62px;
+    }
+
+    .who {
+        height: 100px;
+        width: 850px;
+        background-color: #796EFF;
+        border-radius: 5px;
+        margin-top: 60px;
+        margin-left: 180px;
+        color: white;
+        font-size: large;
+        padding-top: 50px;
+        padding-left: 50px;
+
+    }
+
+    .purple {
+        background-image: url(image/purple.jpg);
+        height: 40px;
+        width: 240px;
+        margin-left: 695px;
+        margin-top: -91px
+    }
+
+    .company {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        color: white;
+        margin-left: 200px;
+        padding-top: 50px;
+    }
+
+    .aboutus {
+        margin-top: -30px;
+    }
+
+    .HelpCenter {
+        margin-top: -30px;
+    }
+
+    .CookiesPolicy {
+        margin-top: -30px;
+    }
+
+    .footer {
+        background: #1D2830;
+        height: 44vh;
+        width: 125.5%;
+        margin-left: -155px;
+        margin-top: 80px;
+
+    }
+
+    .Support {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        color: white;
+        padding-left: 450px;
+        /* padding-bottom: 850px; */
+        margin-top: -178px;
+
+
+    }
+
+    .Legal {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        color: white;
+        padding-left: 740px;
+        margin-top: -143px;
+
+    }
+
+    .installapp {
+        color: white;
+        padding-left: 1150px;
+        /* padding-top: -500px; */
+        margin-top: -140px;
+    }
+
+    .app {
+        background-image: url(image/gle1.jpg);
+        height: 73px;
+        width: 105px;
+        margin-left: 1150px;
+        margin-top: 30px;
+    }
+
+    .divider {
+        border: 2px solid #FFFFFF;
+        opacity: 10%;
+        margin-top: 90px;
+    }
+
+    .all {
+        color: #D9DBE1;
+        margin-top: 20px;
+        margin-left: 195px;
+    }
+
+    .insta {
+        background-image: url(image/insta.jpg);
+        height: 20px;
+        width: 125px;
+        margin-left: 1150px;
+        margin-top: -20px;
+
+    }
+
+    .company i {
+        visibility: collapse;
+
+    }
+
+    .Support i {
+        visibility: collapse;
+
+    }
+
+    .Legal i {
+        visibility: collapse;
+    }
+
+
+
+
+
+    @media only screen and (max-width: 780px) {
+        .team {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px 20px;
+            position: relative;
+            font-size: small;
+        }
+
+        .menu {
+            color: #EA4335;
+            margin-left: 18px;
+            margin-top: -12px;
+        }
+
+        .manage {
+            font-size: 20px;
+            text-align: center;
+            margin-top: -60px;
+            margin-left: 6px;
+        }
+
+        .simple {
+            text-align: center;
+            margin-top: 10px;
+            font-size: xx-small;
+            margin-left: 8px;
+
+        }
+
+        .get {
+            height: 20px;
+            width: 150px;
+            background-color: rgb(238, 244, 238);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-small;
+            margin-left: 84px;
+            margin-top: -100px;
+            position: absolute;
+            /* left: -10px; */
+            z-index: -1;
+        }
+
+        .mail {
+            border: 2px solid rgb(214, 212, 212);
+            height: 30px;
+            width: 230px;
+            margin-left: 38px;
+            margin-top: 30px;
+            color: rgb(162, 159, 159);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .try {
+            background-color: blueviolet;
+            height: 35px;
+            width: 233px;
+            margin-left: 38px;
+            margin-top: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back {
+            height: 210px;
+            width: 310px;
+
+            box-shadow: 0 0 3em rgb(228, 226, 226);
+            margin-top: -40px;
+            margin-left: -2px;
+            background-image: url(image/Screenshot\ 2024-02-04\ 212018.png);
+            background-size: cover;
+            /* visibility: hidden; */
+        }
+
+        .black {
+            height: 420px;
+            width: 404px;
+            background-color: black;
+            display: flex;
+            align-items: start;
+            justify-content: left;
+            margin-left: 20px;
+            margin-top: 100px;
+            visibility: hidden;
+        }
+
+        .black img {
+            height: 20px;
+            width: 20px;
+            margin: 20px 9px;
+            visibility: hidden;
+        }
+
+        .trust {
+            text-align: center;
+            margin: 30px;
+            margin-top: 60px;
+            margin-left: 32px;
+            font-size: xx-small;
+        }
+
+        .google {
+            flex-direction: row;
+            display: flex;
+            margin-top: -10px;
+            margin-left: -8px;
+            font-size: xx-small;
+        }
+
+        .g {
+            color: #4285F4;
+            font-size: small;
+        }
+
+        .o {
+            color: #EA4335;
+            font-size: small;
+        }
+
+        .o1 {
+            color: #FBBC05;
+            font-size: small;
+        }
+
+        .g1 {
+            color: #4285F4;
+            font-size: small;
+        }
+
+        .l {
+            color: #34A853;
+            font-size: small;
+        }
+
+        .e {
+            color: #EA4335;
+            font-size: small;
+        }
+
+        .air {
+            color: #FF5A5F;
+            margin-left: 60px;
+            margin-top: -15px;
+            font-size: small;
+        }
+
+        .facebook {
+            color: #4267B2;
+            font-size: small;
+            margin-left: 149px;
+            margin-top: -16px;
+        }
+
+        .hub {
+            color: #26364d;
+            margin-left: 238px;
+            margin-top: -15px;
+            font-size: small;
+        }
+
+        .line {
+            height: 1px;
+            width: 40px;
+            background-color: rgb(182, 178, 178);
+            margin-top: -355px;
+            margin-left: -20px;
+            visibility: hidden;
+        }
+
+        .icon i {
+            display: flex;
+            /* padding: 10px;  */
+            /* margin-left: -17px; */
+            display: flex;
+            /* margin: 15px; */
+            margin-left: -7px;
+            visibility: hidden;
+        }
+
+        .quetion i {
+            margin-left: -8px;
+            margin-top: 95px;
+            visibility: hidden;
+
+        }
+
+        .over {
+            color: black;
+            margin-left: 30px;
+            margin-top: 10px;
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            visibility: hidden;
+
+        }
+
+        .flex {
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            /* gap: 10px; */
+            margin-left: 300px;
+            margin-top: -70px;
+            visibility: hidden;
+
+
+        }
+
+        .item1 {
+            background-color: rgb(227, 224, 224);
+            height: 70px;
+            width: 60px;
+            /* margin: 10px; */
+            margin-right: 40px;
+            margin-top: 30px;
+            text-align: center;
+            /* padding: 5px; */
+            font-size: xx-small;
+            visibility: hidden;
+
+        }
+
+        .item2 {
+            background-color: rgb(227, 224, 224);
+            height: 50px;
+            width: 60px;
+            /* margin: 10px; */
+            margin-right: 40px;
+            text-align: center;
+            margin-top: 30px;
+            visibility: hidden;
+
+        }
+
+        .item3 {
+            background-color: rgb(227, 224, 224);
+            height: 50px;
+            width: 60px;
+            /* margin: 10px; */
+            margin-right: 40px;
+            text-align: center;
+            margin-top: 30px;
+            padding: 6px;
+            visibility: hidden;
+
+        }
+
+        .item1 i {
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-top: -10px;
+            margin-right: 2px;
+            visibility: hidden;
+
+        }
+
+        .hour {
+            font-size: 5px;
+            color: rgb(68, 67, 67);
+            padding: 30px;
+            text-align: center;
+            margin-left: -10px;
+            margin-top: -25px;
+            text-align: center;
+            visibility: hidden;
+
+        }
+
+        .red {
+            background-color: rgb(225, 186, 186);
+            height: 30px;
+            width: 90px;
+            color: brown;
+            border-radius: 3px;
+            margin-top: 20px;
+            margin-left: 43px;
+            text-align: end;
+            padding-right: 1px;
+            padding-top: 1px;
+            font-size: small;
+            visibility: hidden;
+
+        }
+
+        .green {
+            background-color: rgb(192, 225, 186);
+            height: 10px;
+            width: 15px;
+            color: rgb(45, 139, 45);
+            border-radius: 3px;
+            margin-top: 3px;
+            margin-left: -4px;
+            text-align: start;
+            /* padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 5px; */
+            font-size: 5px;
+            visibility: hidden;
+
+        }
+
+        .green1 {
+            background-color: rgb(192, 225, 186);
+            height: 10px;
+            width: 15px;
+            color: rgb(45, 139, 45);
+            border-radius: 3px;
+            margin-top: 9px;
+            margin-left: -5px;
+            text-align: start;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-left: 5px;
+            font-size: 5px;
+            visibility: hidden;
+
+        }
+
+        .launch {
+            height: 40px;
+            width: 40px;
+            background-color: rgb(227, 224, 224);
+            margin-top: 40px;
+            margin-left: 30px;
+            visibility: hidden;
+
+        }
+
+        .work {
+            height: 40px;
+            width: 53px;
+            background-color: rgb(227, 224, 224);
+            margin-top: 00px;
+            visibility: hidden;
+            margin-left: 19px;
+        }
+
+        .text1 {
+            padding: 30px;
+            visibility: hidden;
+
+        }
+
+        .one {
+            margin-left: 30px;
+            margin-top: 140px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .twelve {
+            height: 100px;
+            width: 20px;
+            background-color: white;
+            border-radius: 3px;
+            margin-left: 31px;
+            margin-top: 6px;
+            visibility: hidden;
+
+        }
+
+        .jan {
+            margin-left: 27px;
+            margin-top: 10px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .two {
+            margin-left: 69px;
+            margin-top: 84px;
+            margin-bottom: 10px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .therty {
+            height: 35px;
+            width: 20px;
+            background-color: white;
+            border-radius: 3px;
+            margin-left: 69px;
+            margin-top: -9px;
+            visibility: hidden;
+
+        }
+
+        .fab {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 65px;
+            margin-top: 13px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .three {
+            margin-left: 7px;
+            margin-top: 22px;
+            color: rgb(63, 162, 63);
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .fifti {
+            height: 72px;
+            width: 20px;
+            background-color: green;
+            border-radius: 3px;
+            margin-left: 108px;
+            margin-top: 2px;
+            visibility: hidden;
+
+        }
+
+        .mar {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 104px;
+            margin-top: 9px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .four {
+            margin-left: 148px;
+            margin-top: -174px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .twenty {
+            height: 25px;
+            width: 20px;
+            background-color: white;
+            border-radius: 3px;
+            margin-left: 148px;
+            margin-top: 2px;
+            font-size: smaller;
+            visibility: hidden;
+        }
+
+        .apr {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 45px;
+            margin-top: 9px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .five {
+            margin-left: 89px;
+            margin-top: 54px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .fourty {
+            height: 204px;
+            width: 20px;
+            background-color: white;
+            border-radius: 3px;
+            margin-left: 189px;
+            margin-top: 2px;
+            visibility: hidden;
+
+        }
+
+        .may {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 183px;
+            margin-top: 10px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .work {
+            padding-top: -10px;
+            padding-left: -20px;
+            visibility: hidden;
+
+        }
+
+        .right {
+            margin-left: 223px;
+            margin-top: -18px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .left {
+            margin-left: 10px;
+            margin-top: -24px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .border {
+            border: 2px solid rgb(109, 108, 108);
+            height: 30px;
+            width: 75px;
+            visibility: hidden;
+
+        }
+
+        .left1 {
+            margin-left: 433px;
+            margin-top: 312px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .right1 {
+            margin-left: 948px;
+            margin-top: -19px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .month {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            margin-left: 403px;
+            margin-top: -20px;
+            color: rgb(109, 108, 108);
+            visibility: hidden;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 62px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 404px;
+            margin-top: -298px;
+            visibility: hidden;
+        }
+
+        .line1 {
+            border: 2px dotted rgb(109, 108, 108);
+            width: 17px;
+            opacity: 0.250;
+            visibility: hidden;
+        }
+
+        .blue {
+            height: 100px;
+            width: 20px;
+            background-color: blue;
+            visibility: hidden;
+        }
+
+        .number {
+            display: flex;
+            flex-direction: column;
+            color: rgb(109, 108, 108);
+            gap: 40px;
+            margin-left: 436px;
+            margin-top: -291px;
+            visibility: hidden;
+
+        }
+
+        .chart {
+            display: flex;
+            margin-left: 462px;
+            margin-top: -9px;
+            gap: 9px;
+            visibility: hidden;
+
+
+        }
+
+        .chart1 {
+            height: 140px;
+            width: 50px;
+            background-color: rgb(105, 105, 197);
+            border-radius: 4px;
+            margin-left: 30px;
+            flex-direction: column;
+            margin-top: -101px;
+            visibility: hidden;
+
+        }
+
+        .chart2 {
+            height: 220px;
+            width: 50px;
+            background-color: rgb(172, 94, 94);
+            border-radius: 4px;
+            margin-top: 81px;
+            margin-left: 30px;
+            visibility: hidden;
+
+        }
+
+        .chart3 {
+            height: 115px;
+            width: 50px;
+            background-color: rgb(171, 171, 100);
+            border-radius: 4px;
+            flex-direction: column;
+            margin-left: 30px;
+            margin-top: 76px;
+            visibility: hidden;
+
+        }
+
+        .chart4 {
+            height: 80px;
+            width: 50px;
+            background-color: rgb(183, 137, 51);
+            border-radius: 4px;
+            margin-left: 30px;
+            margin-top: 1px;
+            visibility: hidden;
+
+        }
+
+        .chart5 {
+            height: 61px;
+            width: 50px;
+            background-color: rgb(83, 54, 54);
+            border-radius: 4px;
+            margin-left: 30px;
+            margin-top: 22px;
+            visibility: hidden;
+        }
+
+        .save {
+            height: 30px;
+            width: 100px;
+            background-color: rgb(84, 208, 84);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: blueviolet;
+            font-size: small;
+            color: white;
+            margin-left: 470px;
+            margin-top: 70px;
+            z-index: 999;
+            visibility: hidden;
+
+        }
+
+        .link {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 10px;
+            margin-top: -12px;
+            gap: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+            background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/hamburger-menu-icon.png);
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+
+        }
+
+        .slack {
+            font-size: larger;
+            margin-left: 1000px;
+            visibility: hidden;
+            margin-top: -25px;
+
+        }
+
+        .over {
+            color: black;
+            margin-left: 30px;
+            margin-top: -290px;
+            font-size: small;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .login {
+            margin-left: 1050px;
+            margin-top: -20px;
+            visibility: hidden;
+        }
+
+        .box {
+            background-color: #edebeb;
+            height: 50px;
+            width: 170px;
+            border-radius: 2.5px;
+            margin-left: 1120px;
+            margin-top: -36px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: blueviolet;
+            /* padding: 20px; */
+            visibility: hidden;
+        }
+
+        .red {
+            background-color: rgb(225, 186, 186);
+            height: 5px;
+            width: 19px;
+            color: brown;
+            border-radius: 3px;
+            margin-top: 10px;
+            margin-left: -5px;
+            text-align: center;
+            padding-right: 1px;
+            padding-top: 10px;
+            font-size: 5px;
+            visibility: hidden;
+        }
+
+        .first {
+            background-color: black;
+            height: 4px;
+            width: 25px;
+            border-radius: 4px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            color: black;
+            /* visibility: hidden; */
+            margin-top: -105px;
+            margin-left: 287px;
+        }
+
+        .timeline {
+            background-color: #FBFAFE;
+            height: 66vh;
+
+            width: 14px;
+
+            padding: 30px;
+            margin-left: -60px;
+            margin-top: 50px;
+            background-size: cover;
+            /* visibility: hidden; */
+
+
+        }
+
+        .message {
+            background-image: url(image/message.jpg);
+            height: 600px;
+            width: 400px;
+            margin-left: -30px;
+
+        }
+
+        .survey {
+            background-image: url(image/survey.jpg);
+            height: 600px;
+            width: 373px;
+            margin-top: 20px;
+            margin-left: -10px;
+        }
+
+        .make {
+            /* width: 36px; */
+            /* height: 40px; */
+            margin-left: 40px;
+            font-size: large;
+            margin-top: 800px;
+        }
+
+        .six {
+            background-image: url(image/team.jpg);
+            height: 350px;
+            width: 300px;
+            margin-left: 35px;
+            background-size: cover;
+            margin-top: 40px;
+            /* margin-top: 10px; */
+        }
+
+        .view1 {
+            height: 30px;
+            width: 200px;
+            background-color: #e3e0f1;
+            border-radius: 4px;
+            color: #7259FA;
+            margin-left: 80px;
+            margin-top: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: small;
+
+
+        }
+
+        .work1 {
+            font-size: large;
+            text-align: center;
+            padding-top: 380px;
+            padding-left: 10px;
+        }
+
+        .seven {
+            background-color: #FBFAFE;
+            height: 77vh;
+            width: 118%;
+            margin-left: -27px;
+            margin-top: 100px;
+            /* visibility: hidden; */
+
+        }
+
+        .since {
+            margin-left: -1px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .start {
+            background-color: #796EFF;
+            height: 50px;
+            width: 180px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin-top: 80px; */
+            margin-left: 90px;
+        }
+
+        .graph1 {
+            background-image: url(image/graph.jpg);
+            height: 280px;
+            width: 370px;
+            /* background-size: cover; */
+            margin-left: -14px;
+            margin-top: -490px;
+            display: flex;
+
+
+        }
+
+
+        .why {
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .it {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .person {
+            background-image: url(image/person.jpg);
+            height: 50px;
+            width: 180px;
+            margin-left: 70px;
+            margin-top: 62px;
+        }
+
+        .who {
+            height: 140px;
+            width: 315px;
+            background-color: #796EFF;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: -30px;
+            color: white;
+            font-size: large;
+            padding-top: 50px;
+            padding-left: 50px;
+
+        }
+
+        .purple {
+            background-image: url(image/purple.jpg);
+            height: 40px;
+            width: 240px;
+            margin-left: 18px;
+            margin-top: -80px
+        }
+
+        .company {
+            /* display: flex; */
+            /* gap: 10px; */
+            /* flex-direction: column; */
+            color: white;
+            margin-left: 200px;
+            padding-top: 50px;
+        }
+
+        .aboutus {
+            visibility: hidden;
+        }
+
+        .Blog {
+            visibility: hidden;
+
+        }
+
+        .Careers {
+            visibility: hidden;
+
+        }
+
+        .ContactUs {
+            visibility: hidden;
+        }
+
+        .company i {
+            margin-top: -33px;
+            margin-left: 100px;
+            visibility: inherit;
+        }
+
+        .footer {
+            background: #1D2830;
+            height: 55vh;
+            width: 160%;
+            margin-left: -155px;
+            margin-top: 80px;
+
+        }
+
+        .Support {
+            display: flex;
+            color: white;
+            padding-left: 200px;
+            margin-top: -90px;
+
+        }
+
+        .Support i {
+            visibility: inherit;
+            margin-top: -33px;
+            margin-left: 100px;
+
+        }
+
+        .HelpCenter {
+            visibility: hidden;
+        }
+
+        .SafetyCenter {
+            visibility: hidden;
+        }
+
+        .Community {
+            visibility: hidden;
+        }
+
+        .Legal {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            color: white;
+            padding-left: 201px;
+            margin-top: -50px;
+
+        }
+
+        .CookiesPolicy {
+            visibility: hidden;
+        }
+
+        .PrivacyPolicy {
+            visibility: hidden;
+
+        }
+
+        .TermsofService {
+            visibility: hidden;
+
+        }
+
+        .Legal i {
+            visibility: inherit;
+            margin-top: -33px;
+            margin-left: 100px;
+        }
+
+
+        .installapp {
+            color: white;
+            padding-left: 200px;
+            margin-top: -50px;
+        }
+
+        .app {
+            background-image: url(image/gle1.jpg);
+            height: 73px;
+            width: 105px;
+            margin-left: 194px;
+            margin-top: 10px;
+        }
+
+        .divider {
+            border: 2px solid #FFFFFF;
+            opacity: 10%;
+            margin-top: 20px;
+        }
+
+        .all {
+            color: #D9DBE1;
+            margin-top: 20px;
+            margin-left: 195px;
+        }
+
+        .insta {
+            background-image: url(image/insta.jpg);
+            height: 20px;
+            width: 125px;
+            margin-left: 1150px;
+            margin-top: -20px;
+
+        }
+
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="team"><b>team.flow</b>
+            <div class="link">
+                <div class="how">How it Works<i class="fa-solid fa-angle-down"></i></div>
+                <div class="product">Product<i class="fa-solid fa-angle-down"></i></div>
+                <div class="price">Pricing</div>
+                <div class="resuorce">Resources<i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="menu">
+                <div class="first"></div>
+                <div class="first"></div>
+                <div class="first"></div>
+            </div>
+            <div class="login" style="margin-left: 930px;">Log in</div>
+            <div class="box "style="margin-left: 1000px;">Get started free</div>
+            <div class="save">Save 90%</div>
+            <div class="get">Get account of $59<i class="fa-solid fa-angle-right"></i></div>
+            <div class="manage"><b>Manage the team</b> <br><b>everyone wants to be on</b> </div>
+            <div class="simple">Simple platform that lets you master what great managers do best,<br> as develop trust,
+                collaborate, and drive team performance.</div>
+            <div class="mail">name@yourcompany.com</div>
+            <div class="try">Try it free</div>
+            <div class="back">
+                <div class="black"><img src="https://yteevents.com/wp-content/uploads/Ellipse-34.png.webp" alt=""></div>
+                <div class="line"></div>
+                <div class="icon">
+                    <i class="fa-solid fa-house" style="color: white;font-size:small"></i>
+                    <i class="fa-solid fa-file-lines" style="color: #818282;font-size:medium"></i>
+                    <i class="fa-solid fa-user-group" style="color: #818282;font-size:small"></i>
+                    <i class="fa-solid fa-gear" style="color: #818282;font-size:small"></i>
+                </div>
+                <div class="quetion"> <i class="fa-solid fa-circle-question" style="color: #818282;font-size:small"></i>
+                </div>
+                <div class="over" style="margin-top: -650px;">Overview</div>
+                <div class="flex">
+                    <div class="item1">987.654 <i class="fa-solid fa-circle-exclamation"
+                            style="color: black;font-size:small"></i>
+                        <div class="hour">Hours on projects
+                            <div class="red"> ↘ -1,23%</div>
+                        </div>
+                    </div>
+                    <div class="item1">789<i class="fa-solid fa-circle-exclamation"
+                            style="color: black;font-size:small"></i>
+                        <div class="hour">New projects launched
+                            <div class="green">↗ +7,89%</div>
+                        </div>
+                    </div>
+                    <div class="item1">321<i class="fa-solid fa-circle-exclamation"
+                            style="color: black;font-size:small"></i>
+                        <div class="hour">Company items
+                            <div class="green1">↗ +1,23%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="launch">
+                    <div class="text1">Launched Projects</div>
+                    <div class="graph">
+                        <div class="one">12</div>
+                        <div class="twelve"></div>
+                        <div class="jan">Jan</div>
+                        <div class="two">34</div>
+                        <div class="therty"></div>
+                        <div class="fab">Fab</div>
+                        <div class="three">56</div>
+                        <div class="fifti"></div>
+                        <div class="mar">Mar</div>
+                        <div class="four">26</div>
+                        <div class="twenty"></div>
+                        <div class="apr">Apr</div>
+                        <div class="five">44</div>
+                        <div class="fourty"></div>
+                        <div class="may">May</div>
+                        <div class="right"><i class="fa-solid fa-angle-right"></i> </div>
+                        <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+                    </div>
+                </div>
+                <div class="work">Hours worked </div>
+                <div class="border">Export</div>
+                <div class="left1"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="right1"><i class="fa-solid fa-angle-right"></i> </div>
+                <div class="month">
+                    <div class="jan1">Jan</div>
+                    <div class="fab1">Fab</div>
+                    <div class="mar1">Mar</div>
+                    <div class="apr1">Apr</div>
+                    <div class="may1">May</div>
+                </div>
+                <div class="container">
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                </div>
+                <div class="number">
+                    <div class="num1">400</div>
+                    <div class="num1">300</div>
+                    <div class="num1">200</div>
+                    <div class="num1">100</div>
+                    <div class="num1">0</div>
+                </div>
+                <div class="chart">
+                    <div class="chart1"></div>
+                    <div class="chart2"></div>
+                    <div class="chart3"></div>
+                    <div class="chart4"></div>
+                    <div class="chart5"></div>
+                </div>
+            </div>
+            <div class="trust">TRUSTED BY OVER <b>10.000+</b> WORLD'S BEST TEAMS</div>
+            <div class="bottom">
+                <div class="google">
+                    <div class="g">G</div>
+                    <div class="o">o</div>
+                    <div class="o1">o</div>
+                    <div class="g1">g</div>
+                    <div class="l">l</div>
+                    <div class="e">e</div>
+                </div>
+                <div class="air"><i class="fa-brands fa-airbnb fa-xl"></i><b>airbnb</b></div>
+                <div class="facebook"><b>facebook</b></div>
+                <div class="hub"><b>HubSp<i class="fa-brands fa-hubspot" style="color: #ff9d2a;"></i>t</b></div>
+                <div class="slack"><i class="fa-brands fa-slack fa-xl" style="color: #B197FC;"></i><b>slack</b></div>
+                <br><br><br>
+
+                <div class="timeline" style="margin-left: -150px; width: 1280px;">
+                    <div class="message"></div>
+                    <div class="survey" style="margin-left: 860px;"></div>
+                    <div class="view1"><b>View more benefits</b></div>
+
+                </div>
+                <div class="make"><b>Make your work easier</b></div>
+                <div class="six"></div>
+
+                <div class="seven">
+                    <div class="work1"><b>We work how you <br> work everyday</b></div>
+                    <div class="since">Since the easiest things to use actually get used, we <br>adapts to the way your
+                        team works – not the other <br>
+                        way around.</div>
+                    <div class="start">Get started free</div>
+                    <div class="graph1"></div>
+                    <div class="graph2"></div>
+                </div>
+
+                <div class="why"><b>Why customers love <br>working with us</b></div>
+                <div class="it">“It's amazing what has helped me learn about my team. <br> I don't worry about
+                    blindspots anymore, and 1-on-1s have never <br> been more productive. The team loves it.”</div>
+
+                <div class="person"></div>
+                <div class="who">84% of employees who use <br> trust their direct manager</div>
+
+                <div class="purple"></div>
+
+                <div class="footer" style="width: 1345px;">
+                    <div class="company"><b>Company</b><i class="fa-solid fa-angle-down"></i>
+                        <div class="aboutus">About Us</div>
+                        <div class="Blog">Blog</div>
+                        <div class="Careers">Careers</div>
+                        <div class="ContactUs">Contact Us</div>
+
+
+                    </div>
+                    <div class="Support"><b>Support</b><i class="fa-solid fa-angle-down"></i>
+                        <div class="HelpCenter">Help Center</div>
+                        <div class="SafetyCenter">Safety Center</div>
+                        <div class="Community">Community</div>
+
+                    </div>
+
+                    <div class="Legal"><b>Legal</b><i class="fa-solid fa-angle-down"></i>
+                        <div class="CookiesPolicy">Cookies Policy</div>
+                        <div class="PrivacyPolicy">Privacy Policy</div>
+                        <div class="TermsofService">Terms of Service</div>
+
+                    </div>
+
+                    <div class="installapp"><b>Install App</b></div>
+                    <div class="app"></div>
+
+                    <div class="divider" style="width: 20px;"></div>
+
+                    <div class="all">© 2020 - All rights reserved</div>
+
+                    <div class="insta"></div>
+</div>
+</div>
+        </div>
+    </div>
+</body>
+
+</html>
