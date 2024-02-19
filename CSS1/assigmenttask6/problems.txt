@@ -1,0 +1,2 @@
+1. link hover doesn't work
+2. save 90% button z-ondex doesn't work
