@@ -1,0 +1,422 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.intro {
+    height: 99vh;
+    width: 1360px;
+    background-image: url(img/dream-pulse-header.jpg);
+}
+
+.fixleft {
+    height: 99vh;
+    width: 400px;
+    background-color: black;
+    opacity: 0.6;
+    position: fixed;
+    
+}
+
+
+.logo {
+    position: relative;
+    height: 240px;
+    width: 380px;
+    margin-left: 20px;
+}
+
+.box1 {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    height: 160px;
+    width: 230px;
+    border: 2px solid white;
+}
+
+.logotext {
+    padding: 26px;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+
+}
+
+.box2 {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    height: 160px;
+    width: 230px;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.links {
+    margin-left: 120px;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: white;
+}
+.socialmedia{
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    gap: 20px;
+
+}
+.copyright{
+    
+    position: absolute;
+    left: 60px;
+    top: 550px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+
+.rightsquar {
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    opacity: 0.5;
+    border: 5px solid whitesmoke;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: blue;
+    margin-bottom: 50px;
+}
+
+.paragraph {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 30px;
+}
+
+.paragraphh {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 30px;
+
+}
+
+.about {
+    display: flex;
+    position: relative;
+}
+
+.balance {
+    position: absolute;
+    right: 33%;
+    font-size: x-large;
+    width: 33%;
+    height: 700px;
+}
+
+.bulding {
+    position: absolute;
+    right: 0px;
+    font-size: x-large;
+    width: 33%;
+    height: 700px;
+}
+
+h1 {
+    color: rgb(57, 57, 109);
+    text-decoration: none;
+}
+
+.black {
+    height: 700px;
+    width: 400px;
+    background-color: rgba(100, 99, 99, 0.171);
+}
+
+.work {
+    position: relative;
+}
+
+.border1 {
+    position: absolute;
+    right: 60px;
+    bottom: 70px;
+    height: 500px;
+    width: 850px;
+    border: 2px solid rgb(102, 97, 97);
+}
+
+.border2 {
+    position: absolute;
+    right: 45px;
+    bottom: 55px;
+    height: 500px;
+    width: 850px;
+    border: 2px solid rgb(102, 97, 97);
+}
+
+.workfont {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    color: rgb(57, 57, 109);
+    text-decoration: none;
+}
+
+.img1 {
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    height: 380px;
+    width: 250px;
+    background-image: url(img/gallery/01.jpg);
+    background-size: cover;
+}
+
+.img2 {
+    position: absolute;
+    left: 295px;
+    top: 70px;
+    height: 380px;
+    width: 250px;
+    background-image: url(img/gallery/02.jpg);
+    background-size: cover;
+}
+
+.img3 {
+    position: absolute;
+    left: 570px;
+    top: 70px;
+    height: 380px;
+    width: 250px;
+    background-image: url(img/gallery/03.jpg);
+    background-size: cover;
+}
+
+.clients {
+    position: relative;
+
+}
+
+.fonts {
+    position: absolute;
+    right: 170px;
+    top: 100px;
+    font-size: x-large;
+}
+
+p {
+    line-height: 40px;
+    color: rgb(92, 86, 86);
+}
+
+.picture {
+    position: relative;
+}
+
+.pic1 {
+    background-image: url(img/client-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.pic2 {
+    background-image: url(img/client-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 220px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.pic3 {
+    background-image: url(img/client-3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 440px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.pic4 {
+    background-image: url(img/client-4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 660px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.picturee {
+    position: relative;
+}
+
+.pic5 {
+    background-image: url(img/client-5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.pic6 {
+    background-image: url(img/client-6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: 220px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.pic7 {
+    background-image: url(img/client-7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: 440px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.pic8 {
+    background-image: url(img/client-8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: 660px;
+    height: 110px;
+    width: 200px;
+    border: 1px solid rgb(156, 150, 150);
+    border-radius: 5px;
+}
+
+.talk {
+    position: relative;
+}
+
+.talkhead {
+    color: rgb(57, 57, 109);
+    position: absolute;
+    /* left: 20px; */
+
+}
+
+.talkp {
+    position: absolute;
+    left: 40px;
+    top: 80px;
+}
+
+.talktous {
+    position: absolute;
+    left: 460px;
+    top: 100px;
+    height: 450px;
+    width: 400px;
+    border: 1px solid rgb(156, 150, 150);
+}
+
+.talktouss {
+    position: absolute;
+    left: 475px;
+    top: 115px;
+    height: 450px;
+    width: 400px;
+    font-size: larger;
+    border: 1px solid rgb(156, 150, 150);
+}
+
+.form {
+    position: absolute;
+    left: 950px;
+    top: 150px;
+}
+
+.input1 {
+    height: 80px;
+    width: 290px;
+    border: none;
+    outline: none;
+
+    font-size: large;
+    border-bottom: 1px solid black;
+}
+
+.input2 {
+    height: 80px;
+    width: 290px;
+    border: none;
+    outline: none;
+    font-size: large;
+    border-bottom: 1px solid black;
+}
+
+.input3 {
+    height: 100px;
+    width: 290px;
+    border: none;
+    outline: none;
+
+    font-size: large;
+    border-bottom: 1px solid black;
+}
+.send{
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    height: 30px;
+    width: 80px;
+    background-color: white;
+    border: 1px solid;
+}
