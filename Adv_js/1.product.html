@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart in JS</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    }
+    table {
+        width: 70%;
+        height: auto;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    .product-info {
+        display: flex;
+        align-items: center;
+    }
+    .product-info img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+    .quantity {
+        width: 50px;
+    }
+    .remove-btn {
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    .remove-btn:hover {
+        background-color: #e53e2f;
+    }
+</style>
+</head>
+
+<body>
+    <br><br><br>
+    <table id="cart" align="center">
+        <thead>
+            <tr>
+                <th>Product Info</th>
+                <th>Quantity</th>
+                <th>Price (per unit)</th>
+                <th>Price (subtotal)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="product-info">
+                    <img src="img/o1.jpg" alt="Product Image 1">
+                    Fortunata Window Hardware - Decorative Holdbacks - Mocha
+                </td>
+                <td><input type="number" value="1" class="quantity" min="1"></td>
+                <td class="price-per-unit">$29.99</td>
+                <td class="subtotal">$59.98</td>
+                <td><button class="remove-btn">Remove</button></td>
+            </tr>
+            <tr>
+                <td class="product-info">
+                    <img src="img/02.jpg" alt="Product Image 2">
+                    Woven Trellis Window Hardware - Clip Rings - Bronze
+                </td>
+                <td><input type="number" value="1" class="quantity" min="1"></td>
+                <td class="price-per-unit">$12.99</td>
+                <td class="subtotal">$12.99</td>
+                <td><button class="remove-btn">Remove</button></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td colspan="2" id="total-price">$72.97</td>
+            </tr>
+        </tfoot>
+    </table>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const cart = document.getElementById('cart');
+    const totalPriceElement = document.getElementById('total-price');
+
+    function updateSubtotal(row) {
+        const quantity = row.querySelector('.quantity').value;
+        const pricePerUnit = parseFloat(row.querySelector('.price-per-unit').textContent.replace('$', ''));
+        const subtotal = row.querySelector('.subtotal');
+        subtotal.textContent = '$' + (quantity * pricePerUnit).toFixed(2);
+    }
+
+    function updateTotalPrice() {
+        const subtotals = cart.querySelectorAll('.subtotal');
+        let total = 0;
+        subtotals.forEach(subtotal => {
+            total += parseFloat(subtotal.textContent.replace('$', ''));
+        });
+        totalPriceElement.textContent = '$' + total.toFixed(2);
+    }
+
+    cart.addEventListener('input', (event) => {
+        if (event.target.classList.contains('quantity')) {
+            const row = event.target.closest('tr');
+            updateSubtotal(row);
+            updateTotalPrice();
+        }
+    });
+
+    cart.addEventListener('click', (event) => {
+        if (event.target.classList.contains('remove-btn')) {
+            const row = event.target.closest('tr');
+            row.remove();
+            updateTotalPrice();
+        }
+    });
+
+    cart.querySelectorAll('tbody tr').forEach(row => updateSubtotal(row));
+    updateTotalPrice();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Email Vaidation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #e3f2fd;
+      }
+      .input-field {
+        position: relative;
+        height: 50px;
+        width: 280px;
+        border-radius: 6px;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .input-field input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        padding: 0 15px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #333;
+      }
+      input::placeholder {
+        color: #b4b4b4;
+      }
+      .input-field .email-icon {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 22px;
+        color: #b4b4b4;
+      }
+   
+    </style>
+  </head>
+  <body>
+
+    <h1>Enter Your Email</h1>
+    <div class="input-field">
+      <input type="email" placeholder="Enter your email" spellcheck="false" />
+      <i class="uil uil-envelope email-icon"></i>
+    </div>
+
+    <script>
+      const input = document.querySelector("input"),
+        emailIcon = document.querySelector(".email-icon");
+
+      input.addEventListener("keyup", () => {
+        let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (input.value === "") {
+          emailIcon.classList.replace("uil-check-circle", "uil-envelope");
+          return (emailIcon.style.color = "#b4b4b4");
+        }
+        if (input.value.match(pattern)) {
+          emailIcon.classList.replace("uil-envelope", "uil-check-circle");
+          return (emailIcon.style.color = "#4bb543");
+        }
+        emailIcon.classList.replace("uil-check-circle", "uil-envelope");
+        emailIcon.style.color = "#de0611";
+      });
+    </script>
+  </body>
+</html>

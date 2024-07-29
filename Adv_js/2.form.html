@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        input, select{
+            width: 700px;
+            height: 30px;
+        }
+        .head{
+            font-size: 20px;
+        }
+        button{
+            width: 705px;
+            height: 35px;
+            background-color: rgb(75, 231, 145);
+            color: white;
+            border: none;
+            margin-top: 40px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form style="display: flex; flex-direction: column; justify-content: center; align-items: center;" onsubmit="return reg_form(this)">
+    <h1 style="text-align: center;">Form Validation</h1>
+    <br>
+  <div class="one" style="justify-content: center;">
+    <div class="head">Full Name</div>
+    <input type="text" id="name" placeholder="Enter your name"><br>
+    <span id="msg1"></span>
+
+  </div>
+
+    <br><br>
+
+  <div class="two">
+    <div class="head">Email</div>
+    <input type="email" id="email" placeholder="Enter Email"><br>
+    <span id="msg2"></span>
+
+  </div>
+
+<br><br>
+
+<div class="three">
+    <div class="head">Password</div>
+    <input type="password" id="pass" placeholder="Enter Password"  >
+    <i onclick="show()" class="fa-solid fa-eye" style="position: absolute; right: 335px; top: 330px;"></i><br>
+    <span id="msg3"></span>
+
+  </div>
+
+  <br><br>
+
+  <div class="two">
+    <div class="head">Birth Date</div>
+    <input type="date" id="bdate"><br>
+    <span id="msg4"></span>
+
+  </div>
+
+  <br><br>
+
+
+
+  <div class="form-group gender">
+    <label for="gender" style="font-size: larger;">Gender</label>
+    <br>
+    <select id="gender">
+      <option value="" selected disabled>Select your gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+<br>
+    <span id="msg5" name="msg5"></span>
+
+  </div>
+
+
+
+  
+  <button>Submit</button>
+
+
+
+  <script>
+    
+    function show() {
+        var pass = document.getElementById("pass");
+
+        if (pass.type === "password") {
+            pass.type = "text"
+        } else {
+            pass.type ="password"
+        }
+    } 
+    
+    const genderInput = document.getElementById("gender");
+    const gender = genderInput.value;
+
+    function reg_form(abc){
+        if(abc.name.value==""){
+            document.getElementById("msg1").innerHTML= "!Please Enter Some Value in Full Name"
+            document.getElementById("name").style.borderColor ="red"
+            abc.name.focus();
+            return false;
+        }
+        if(!abc.email.value.match(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/)){
+            document.getElementById("msg2").innerHTML="! Please enter Correct Email Address";
+            abc.email.focus();
+            return false;
+        }
+        if(abc.pass.value=="")
+	    {
+	        document.getElementById("msg3").innerHTML="! Please enter Some Value in Password";
+	        abc.pass.focus();
+	        return false;
+	    }
+        if(abc.bdate.value=="")
+	    {
+	        document.getElementById("msg4").innerHTML="! Please enter Your Birth Date";
+	        abc.bdate.focus();
+	        return false;
+	    }
+        if (gender === "") {
+              
+                document.getElementById("msg5").innerHTML="! Please enter Your gender";
+                gender.focus();
+	            return false;
+            }
+      
+        
+    }
+  </script>
+
+</form>
+</body>
+</html>
+
+
+
