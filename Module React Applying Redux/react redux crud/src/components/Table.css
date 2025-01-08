@@ -1,0 +1,32 @@
+.crud-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: left;
+  }
+  .crud-table th,
+  .crud-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .crud-table th {
+    background-color: #333;
+    color: white;
+  }
+  .edit-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
